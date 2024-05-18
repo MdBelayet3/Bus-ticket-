@@ -2,34 +2,105 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- goggle font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!-- daisy ui and tailwind link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- favicon link -->
-    <link rel="shortcut icon" href="images/banner.png" type="image/x-icon">
-    <!-- css link -->
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Belayet paribohon</title>
+  <!-- goggle font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- daisy ui and tailwind link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- favicon link -->
+  <link rel="shortcut icon" href="images/banner.png" type="image/x-icon">
+  <!-- css link -->
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Belayet paribohon</title>
 </head>
 
 <body>
-<header>
-    <h2 class="">Hi i am belayet hossain</h2>
-</header>
-<main>
+  <header class="px-5 md:px-24">
+    <!-- navbar -->
+    <div class="navbar bg-base-100 mb-9">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Belayet-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn text-[#1DD100] border-solid border-2 border-[#1DD100 bg-[#1DD1001A]">Bus <img
+            src="images/bus-icon.png" alt=""></a>
+      </div>
+    </div>
+    <!-- banner section -->
+    <div class="text-center pt-28 pb-36 bg-[url('/images/banner.png')] bg-no-repeat bg-cover  bg-center  rounded-xl">
+      <h1 class="text-3xl lg:text-6xl font-extrabold text-white">End-to-End Travel with <br> <span class="text-[#1DD100]">Belayet Paribahan</span></h1>
+      <p class="mt-4 text-white">Yes, you can run unit tests and view the results directly within the app. The <br> integrated
+        testing features allow for a streamlined .</p>
+      <button class="bg-[#1DD100] text-xl font-bold px-7 py-5 rounded-xl mt-8">Buy Tickets</button>
+    </div>
+    <!-- banner card -->
+    <div class="flex flex-col lg:flex-row lg:justify-center items-center gap-6 lg:relative bottom-16">
+      <!-- registered users card -->
+      <div class="flex gap-4 rounded-3xl border-b-4 border-[#1DD100] w-80 p-8 shadow-lg bg-white">
+        <div>
+          <img src="images/people.png" alt="People image">
+        </div>
+        <div>
+          <h2 class="text-4xl font-bold mb-2">500K+</h2>
+          <p>Registered users</p>
+        </div>
+      </div>
+      <!-- tickers sold card -->
+      <div class="flex gap-4 rounded-3xl border-b-4 border-[#1DD100] w-80 p-8 shadow-lg bg-white">
+        <div>
+          <img src="images/ticket-cupon.png" alt="People image">
+        </div>
+        <div>
+          <h2 class="text-4xl font-bold mb-2">1.7 lacks</h2>
+          <p>Tickets sold</p>
+        </div>
+      </div>
+      <!-- rental partners card -->
+      <div class="flex gap-4 rounded-3xl border-b-4 border-[#1DD100] w-80 p-8 shadow-lg bg-white">
+        <div>
+          <img src="images/stoppage.png" alt="People image">
+        </div>
+        <div>
+          <h2 class="text-4xl font-bold mb-2">80K+</h2>
+          <p>Rental partners</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
 
-</main>
-<footer>
+  </main>
+  <footer>
 
-</footer>
+  </footer>
 </body>
 
 </html>
