@@ -39,11 +39,11 @@ submitButton.addEventListener('click',function(){
     const totalPrice =document.getElementById('total-price');
     const totalPriceValue = totalPrice.innerText;
     const discountedPrice = document.getElementById('discounted-price');
-    if(peopleCouponCode === offer15){
+    if(peopleCouponCode.trim() === offer15){
         const discount15 = totalPriceValue - (totalPriceValue * 0.15);
         discountedPrice.innerText = discount15;
     }
-    else if(peopleCouponCode === offer20){
+    else if(peopleCouponCode.trim() === offer20){
         const discount20 = totalPriceValue - (totalPriceValue * 0.2);
         const discountedPrice = document.getElementById('discounted-price');
         discountedPrice.innerText = discount20;
@@ -54,7 +54,30 @@ submitButton.addEventListener('click',function(){
 
 })
 
+// function for taken passenger name and phone number 
+const passengerName = document.getElementById('passenger-name');
+const passengerNumber = document.getElementById('passenger-number');
+const passengerInfoBtn = document.getElementById('passenger-info-btn');
 
-function seat(){
-    console.log('I am clicked a seat');
-}
+function handleInputEvent(){
+    const input1 = passengerName.value.trim();
+    const input2 = passengerNumber.value.trim();
+    passengerInfoBtn.disabled = input1 === '' || input2 === '';
+} 
+
+passengerName.addEventListener('input',handleInputEvent);
+passengerNumber.addEventListener('input',handleInputEvent);
+
+
+//function for hide main website and show success section 
+passengerInfoBtn.addEventListener('click',function(){
+    hideElementById('main-website')
+    showElementById('success-section')
+})
+
+//function for hide success and show main website 
+document.getElementById('show-main-website-btn').addEventListener('click',function(){
+    hideElementById('success-section')
+    showElementById('main-website')
+})
+

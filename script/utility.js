@@ -35,9 +35,14 @@ function countTotalPrice(elementId){
 
 }
 
-// function for discount seat price
-function discountSeatPrice(elementId){
+// function for hide element 
+function hideElementById(elementId){
     const element = document.getElementById(elementId);
-    const elementValue = element.value;
-    console.log(elementValue);
+    element.classList.add('hidden');
+}
+
+// function for hide element 
+function showElementById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('hidden');
 }
